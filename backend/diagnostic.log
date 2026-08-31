@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\MONISHA S\OneDrive\Documents\ai system\backend\diagnose.py", line 6, in <module>
+    import app.main
+  File "C:\Users\MONISHA S\OneDrive\Documents\ai system\backend\app\main.py", line 5, in <module>
+    from app.api.api import api_router
+  File "C:\Users\MONISHA S\OneDrive\Documents\ai system\backend\app\api\api.py", line 2, in <module>
+    from app.api.endpoints import auth, transactions, alerts, investigations, reports, customers, analytics, audit
+  File "C:\Users\MONISHA S\OneDrive\Documents\ai system\backend\app\api\endpoints\reports.py", line 22, in <module>
+    current_user: User = Depends(deps.get_current_admin)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'app.api.deps' has no attribute 'get_current_admin'. Did you mean: 'get_current_user'?

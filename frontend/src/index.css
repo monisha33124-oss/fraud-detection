@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .card-glass {
+    @apply bg-white bg-opacity-70 backdrop-blur-md border border-white border-opacity-50 shadow-lg rounded-2xl;
+  }
+}
